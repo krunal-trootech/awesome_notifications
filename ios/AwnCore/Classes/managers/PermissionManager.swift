@@ -497,6 +497,7 @@ public class PermissionManager {
     ) {
         
         let iOSpermissions:UNAuthorizationOptions = getIosPermissionsCode(permissionsToRequest)
+        iOSpermissions.insert(.providesAppNotificationSettings)
         UNUserNotificationCenter.current().requestAuthorization(options: iOSpermissions) { (granted, error) in
 
             if granted {

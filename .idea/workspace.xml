@@ -7,21 +7,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90f153b2-27cc-4b8f-8201-8a3571b86189" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/android/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/version" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/version" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+    <list default="true" id="90f153b2-27cc-4b8f-8201-8a3571b86189" name="Changes" comment="Add userNotificationCenter Method for getting a callback of `:openForSettings` and invoke method to get an event in flutter handle redirection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/AwnCore/Classes/AwesomeNotifications.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/AwnCore/Classes/AwesomeNotifications.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/awesome_notifications_method_channel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/awesome_notifications_method_channel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/definitions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/definitions.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +74,7 @@
     "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
     "dart.analysis.tool.window.visible": "false",
     "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "/Users/rafaelsetragni/Documents/GitHub/plugins/awesome_notifications/example/build/app/outputs/bundle/release",
+    "last_opened_file_path": "/Volumes/Data/awesome_notifications",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "dart.settings",
     "show.migrate.to.gradle.popup": "false"
@@ -237,6 +225,14 @@
       <option name="presentableId" value="Default" />
       <updated>1664150949332</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add userNotificationCenter Method for getting a callback of `:openForSettings` and invoke method to get an event in flutter handle redirection">
+      <created>1701769203147</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701769203147</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,6 +245,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add userNotificationCenter Method for getting a callback of `:openForSettings` and invoke method to get an event in flutter handle redirection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add userNotificationCenter Method for getting a callback of `:openForSettings` and invoke method to get an event in flutter handle redirection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
