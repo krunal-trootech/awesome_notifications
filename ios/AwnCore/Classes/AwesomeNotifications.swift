@@ -523,6 +523,11 @@ public class AwesomeNotifications:
             Logger.d(TAG, "Awesome Notifications attached for iOS")
         }
     }
+
+    @available(iOS 12.0, *)
+    public func userNotificationCenter(_ center: UNUserNotificationCenter, openSettingsFor notification: UNNotification?) {
+        notifyAwesomeEvent(eventType: "userComeFromNotificationSettings", content: ["summary":"userComeFromNotificationSettings"])
+    }
     
     @available(iOS 10.0, *)
     public func userNotificationCenter(

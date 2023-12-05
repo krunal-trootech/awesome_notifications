@@ -1,5 +1,5 @@
 PODS:
-  - awesome_notifications (0.8.0):
+  - awesome_notifications (0.8.1):
     - Flutter
     - IosAwnCore (~> 0.8.0)
   - device_info_plus (0.0.1):
@@ -55,7 +55,7 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/vibration/ios"
 
 SPEC CHECKSUMS:
-  awesome_notifications: 46bcb1072a613878e97f0f67478f82669b9a1623
+  awesome_notifications: db394d2e061e4583ba0f738ddea611e3986cc3fb
   device_info_plus: 7545d84d8d1b896cb16a4ff98c19f07ec4b298ea
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   fluttertoast: 31b00dabfa7fb7bacd9e7dbee580d7a2ff4bf265
@@ -68,4 +68,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 75def7c0fdb0efe5a8b7599c2e7d9302906d572f
 
-COCOAPODS: 1.13.0
+COCOAPODS: 1.14.3

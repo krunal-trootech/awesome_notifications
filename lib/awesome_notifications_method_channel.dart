@@ -546,6 +546,13 @@ class MethodChannelAwesomeNotifications extends AwesomeNotificationsPlatform {
         }
         return;
 
+      case EVENT_USER_COME_FROM_NOTIFICATION_SETTING:
+        var received = ReceivedAction().fromMap(arguments);
+        if (actionHandler != null) {
+          await actionHandler!(received);
+        }
+        return;
+
       default:
         throw UnsupportedError('Unrecognized JSON message');
     }

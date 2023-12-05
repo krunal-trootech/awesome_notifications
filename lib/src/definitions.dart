@@ -82,6 +82,8 @@ const EVENT_NOTIFICATION_DISPLAYED = 'notificationDisplayed';
 const EVENT_NOTIFICATION_DISMISSED = 'notificationDismissed';
 const EVENT_DEFAULT_ACTION = 'defaultAction';
 const EVENT_SILENT_ACTION = 'silentAction';
+const EVENT_USER_COME_FROM_NOTIFICATION_SETTING =
+    'userComeFromNotificationSettings';
 
 const CHANNEL_METHOD_NOTIFICATION_AT_LAUNCH = 'notificationAtLaunch';
 
