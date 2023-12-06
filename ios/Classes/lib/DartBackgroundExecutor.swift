@@ -8,7 +8,6 @@
 import UIKit
 import Foundation
 import Flutter
-import IosAwnCore
 
 public class DartBackgroundExecutor: BackgroundExecutor {
     private let TAG = "DartBackgroundExecutor"

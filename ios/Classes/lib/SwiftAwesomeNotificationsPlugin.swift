@@ -3,7 +3,6 @@
 import UIKit
 import Flutter
 import UserNotifications
-import IosAwnCore
 
 public class SwiftAwesomeNotificationsPlugin:
                 NSObject,

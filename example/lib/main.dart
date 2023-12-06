@@ -52,6 +52,7 @@ class NotificationController {
   }
 
   static ReceivePort? receivePort;
+
   static Future<void> initializeIsolateReceivePort() async {
     receivePort = ReceivePort('Notification action port in main isolate')
       ..listen(
@@ -78,6 +79,7 @@ class NotificationController {
   @pragma('vm:entry-point')
   static Future<void> onActionReceivedMethod(
       ReceivedAction receivedAction) async {
+    print('onActionReceivedMethod: Called in Main');
     if (receivedAction.actionType == ActionType.SilentAction ||
         receivedAction.actionType == ActionType.SilentBackgroundAction) {
       // For background actions, you must hold the execution until the end
@@ -200,7 +202,8 @@ class NotificationController {
 
     await AwesomeNotifications().createNotification(
         content: NotificationContent(
-            id: -1, // -1 is replaced by a random number
+            id: -1,
+            // -1 is replaced by a random number
             channelKey: 'alerts',
             title: 'Huston! The eagle has landed!',
             body:
@@ -372,6 +375,7 @@ class _AppState extends State<MyApp> {
 ///
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
+
   final String title;
 
   @override
@@ -452,8 +456,11 @@ class NotificationPage extends StatefulWidget {
 
 class NotificationPageState extends State<NotificationPage> {
   bool get hasTitle => widget.receivedAction.title?.isNotEmpty ?? false;
+
   bool get hasBody => widget.receivedAction.body?.isNotEmpty ?? false;
+
   bool get hasLargeIcon => widget.receivedAction.largeIconImage != null;
+
   bool get hasBigPicture => widget.receivedAction.bigPictureImage != null;
 
   double bigPictureSize = 0.0;

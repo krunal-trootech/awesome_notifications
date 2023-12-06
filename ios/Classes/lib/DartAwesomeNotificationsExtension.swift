@@ -7,7 +7,6 @@
 
 import Flutter
 import Foundation
-import IosAwnCore
 
 public class DartAwesomeNotificationsExtension: AwesomeNotificationsExtension {
     

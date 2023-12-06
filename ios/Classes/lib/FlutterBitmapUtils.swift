@@ -7,7 +7,6 @@
 
 import Flutter
 import Foundation
-import IosAwnCore
 
 @available(iOS 10.0, *)
 public class FlutterBitmapUtils : BitmapUtils {
