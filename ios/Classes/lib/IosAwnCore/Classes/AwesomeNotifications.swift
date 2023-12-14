@@ -536,7 +536,14 @@ public class AwesomeNotifications:
     
     @available(iOS 12.0, *)
     public func userNotificationCenter(_ center: UNUserNotificationCenter, openSettingsFor notification: UNNotification?) {
-        notifyAwesomeEvent(eventType: "userComeFromNotificationSettings", content: ["summary":"userComeFromNotificationSettings"])
+        let delayInMilliseconds = 1000
+        let delayInSeconds = Double(delayInMilliseconds) / 1000.0
+
+        let dispatchTime = DispatchTime.now() + .milliseconds(delayInMilliseconds)
+
+        DispatchQueue.main.asyncAfter(deadline: dispatchTime) {
+            self.notifyAwesomeEvent(eventType: "userComeFromNotificationSettings", content: ["summary":"userComeFromNotificationSettings"])
+        }
     }
     
     @available(iOS 10.0, *)
