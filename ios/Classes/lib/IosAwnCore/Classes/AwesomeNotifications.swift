@@ -159,7 +159,7 @@ public class AwesomeNotifications:
             selector: #selector(self.didFinishLaunch),
             name: UIApplication.didFinishLaunchingNotification, object: nil)
 
-        UNUserNotificationCenter.current().requestAuthorization(options: [.providesAppNotificationSettings])  { (granted, error) in }
+        UNUserNotificationCenter.current().requestAuthorization(options: [.providesAppNotificationSettings,.alert,.badge,.sound])  { (granted, error) in }
     }
     
     // ***********************  EVENT INTERFACES  *******************************
