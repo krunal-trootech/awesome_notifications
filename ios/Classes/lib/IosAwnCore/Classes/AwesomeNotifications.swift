@@ -687,9 +687,6 @@ public class AwesomeNotifications:
                         willPresent: notification,
                         withCompletionHandler: completionHandler)
             }
-            else {
-                completionHandler([.alert, .badge, .sound])
-            }
         }
         
         do {
